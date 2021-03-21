@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nika Khurtsidze">
+    <meta name="description" content="My first website,
+    Final assignment project, Instructor: K. Makalatia, 
+    Academy of Digital Industries, Front-End development"/>
+    <meta name="keywords" content="HTML,CSS,FLEX,Responsive,Form">
+    <!--meta name="google-site-verification" content="+FIXME"/-->
+    <title>Nika Khurtsidze</title>
+    <link rel="shortcut icon" href="img/frog-solid.svg"/>
+    <link rel="stylesheet" href="css/reset.css">  
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <header class="header">
+	<ul> 
+	    <li> <a href="index.html">მთავარი</a></li>
+	    <li> <a href="about.html">ჩემს შესახებ</a></li>
+	    <li> <a href="resume.html">CV</a></li>
+	    <li> <a href="photos.html">სურათები</a></li>
+	    <li> <a href="contact.html">კონტაქტი</a></li>
+	</ul>
+    </header>
+
+    <div class=contact_list>
+	<ul>
+	    <li> <img alt="" src="img/calendar-alt-regular.svg"/> ორშაბათი - პარასკევი, 09:00-21:00 </li>
+	    <li> <img alt="" src="img/phone-square-solid.svg"/> (+995) 32 11 22 33 (fake number, please don't try to call) </li>
+	    <li> <img alt="" src="img/envelope-regular.svg"/> <a href="mailto:nika.khurtsidze@fakeemail.com">nika.khurtsidze@fakeemail.com</a></li>
+	    <li> <img alt="" src="img/facebook-square-brands.svg"/> <a href="https://www.facebook.com/profile.php?id=100005020957311"> Send me a friend request</a> </li>
+	</ul>
+    </div>
+
+    <div class=feedback>
+	<h2> გამომიგზავნეთ თქვენი შეფასება </h2> 
+            <form class="form-wraper" action="#" onsubmit="sendMail()">
+
+                <div class="input-wraper">
+                    <label for="fname">თქვენი სახელი*: </label>
+                    <input class="input" type="text" id="fname" name="fisrtname" placeholder="თქვენი სახელი..." required>
+                </div>
+
+                <div>
+                    <label> საუკეთესო გვერდი*: </label>
+		    <ul>
+			<li> <input type="radio" name="page" value="home" required> <label> მთავარი </label> </li>
+			<li> <input type="radio" name="page" value="about"> <label> ჩემს შესახებ </label> </li>
+			<li> <input type="radio" name="page" value="cv"> <label> CV </label> </li>
+			<li> <input type="radio" name="page" value="photos"> <label> სურათები </label> </li>
+			<li> <input type="radio" name="page" value="contact"> <label> კონტაქტი </label> </li>
+		    </ul>
+                </div>
+
+                <div>
+                    <label> დამატებითი კომენტარი: </label>
+                    <textarea class="textarea-wraper" id="additionalComments" placeholder="Please eneter Your review"> </textarea>
+                </div>
+
+                <div class="input-wraper">
+		    <label for="grade">საბოლოო შეფასება*:</label>
+		    <select name="grade" id="grade" required>
+		      <option disabled selected value> -- აირჩიეთ შეფასება -- </option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
+		    </select> 
+                </div>
+		    
+                <button class="button-wraper" type="submit"> გაგზავნა </button>
+            </form>
+    </div>
+
+</body>
+</html> 

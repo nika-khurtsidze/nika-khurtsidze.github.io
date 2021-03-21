@@ -1,0 +1,248 @@
+body, html {
+  height: 95%;
+  background-color: black;
+}
+
+
+.header{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+}
+
+.header ul{
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li {
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+.header ul li a {
+    color: white;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 20px;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: yellow;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 20px;
+    color: white;
+}
+
+.bg-image {
+    background-image: url("../img/nika.jpg");
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 4px solid white;
+  position: absolute;
+  top: 82%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.wiki-frame {
+    height: 800px;
+    width: 100%;
+}
+
+.thumb{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.thumb:hover{
+  border: 5px solid red;
+}
+
+.image{
+    margin: 2px;
+    height: 600px;
+}
+
+.photos{
+    background-color: black;
+    height: 740px;
+}
+
+.cv_img{
+    margin-top: 10px;
+    background-color: black;
+    height: 600px;
+    float: left;
+}
+
+.cv_img img{
+    height:350px;
+    margin: 30px;
+}
+
+.cv_list{
+    margin-top: 10px;
+    background-color: black;
+    height: 600px;
+    width: 100%;
+}
+
+.cv_list ul{
+    background-color: black;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: disc;
+    float: left;
+}
+
+.cv_list ul li{
+    color: yellow;
+    padding-top: 30px;
+}
+
+
+.cv_list ul ul{
+    font-size: 20px;
+    padding-top: 0px;
+    font-weight: normal;
+    list-style-type: none;
+    float: none;
+}
+
+.cv_list ul ul li{
+    color: white;
+    padding-top: 10px;
+}
+
+.contact_list{
+    margin-top: 20px;
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.contact_list ul{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.contact_list ul li{
+    color: white;
+    padding-top: 10px;
+}
+
+.contact_list ul img{
+    width: 29px;
+    height:20px;
+    padding: 2px;
+    background-color: white;
+}
+
+.contact_list ul li a{
+    color: white;
+}
+
+.form-wrapper {
+    width: 700px;
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width:100px;
+}
+
+textarea{
+    width: 400px;
+    height: 100px;
+    margin: 4px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input{
+    margin: 4px;
+    width: 400px;
+    height: 30px;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+
+label{
+  color: white;
+  font-size: 16px;
+  height: 20px;
+  width: 240px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  display:inline-block
+}
+
+.button-wraper {
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: 5px;
+    font-size: 26px;
+}
+
+.about{
+    width: 100%;
+    font-size: 20px;
+    font-family: "BPG Banner", sans-serif;
+    padding: 40px;
+}
+.about p{
+    color: white;
+    margin: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.about p a{
+    color: yellow;
+}

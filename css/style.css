@@ -78,8 +78,8 @@ h3 {
 
 .thumb{
     margin: 10px;
-    width: 60px;
-    height: 60px;
+    width: 5%;
+    height: 50px;
 }
 
 .thumb:hover{
@@ -88,7 +88,8 @@ h3 {
 
 .image{
     margin: 2px;
-    height: 600px;
+    height: auto;
+    width: 85%;
 }
 
 .photos{

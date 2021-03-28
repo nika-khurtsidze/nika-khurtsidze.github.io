@@ -1,0 +1,71 @@
+@media (max-width:1000px) {
+    .cv_list ul{
+	font-size: 16px;
+    }
+    .cv_list ul ul{
+	font-size: 12px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .header{
+	font-size: 12px;
+    }
+    h2 {
+	font-size: 12px;
+    }
+    p{
+	font-size: 8px;
+    }
+    .contact_list ul{
+	font-size: 12px;
+    }
+    label{
+      font-size: 12px;
+    }
+    .mymenu ul{
+	font-size: 12px;
+    }
+    input::placeholder {
+	font-size: 12px;
+    }
+
+    .cv_list ul{
+	font-size: 12px;
+    }
+    .cv_list ul ul{
+	font-size: 10px;
+    }
+}
+
+@media (max-width:300px) {
+    .header{
+	font-size: 8px;
+    }
+    h2 {
+	font-size: 8px;
+    }
+    p{
+	font-size: 8px;
+    }
+    .contact_list ul{
+	font-size: 8px;
+    }
+    label{
+      font-size: 8px;
+    }
+    .mymenu ul{
+	font-size: 8px;
+    }
+    input::placeholder {
+	font-size: 12px;
+    }
+
+    .cv_list ul{
+	font-size: 8px;
+    }
+    .cv_list ul ul{
+	font-size: 8px;
+    }
+}

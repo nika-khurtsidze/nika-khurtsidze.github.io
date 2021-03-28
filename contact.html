@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="img/frog-solid.svg"/>
     <link rel="stylesheet" href="css/reset.css">  
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resp.css">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -38,41 +39,46 @@
     <div class=feedback>
 	<h2> გამომიგზავნეთ თქვენი შეფასება </h2> 
             <form class="form-wraper" action="#" onsubmit="sendMail()">
-
-                <div class="input-wraper">
-                    <label for="fname">თქვენი სახელი*: </label>
+                <div class="mymenu">
+                    <label> თქვენი სახელი*: </label>
+		    <p>
                     <input class="input" type="text" id="fname" name="fisrtname" placeholder="თქვენი სახელი..." required>
+		    </p>
                 </div>
 
-                <div>
+                <div class=mymenu>
                     <label> საუკეთესო გვერდი*: </label>
 		    <ul>
-			<li> <input type="radio" name="page" value="home" required> <label> მთავარი </label> </li>
-			<li> <input type="radio" name="page" value="about"> <label> ჩემს შესახებ </label> </li>
-			<li> <input type="radio" name="page" value="cv"> <label> CV </label> </li>
-			<li> <input type="radio" name="page" value="photos"> <label> სურათები </label> </li>
-			<li> <input type="radio" name="page" value="contact"> <label> კონტაქტი </label> </li>
+			<li> <input type="radio" name="page" value="home" required> მთავარი </li>
+			<li> <input type="radio" name="page" value="about"> ჩემს შესახებ </li>
+			<li> <input type="radio" name="page" value="cv"> CV </li>
+			<li> <input type="radio" name="page" value="photos"> სურათები </li>
+			<li> <input type="radio" name="page" value="contact">  კონტაქტი </li>
 		    </ul>
                 </div>
 
-                <div>
-                    <label> დამატებითი კომენტარი: </label>
-                    <textarea class="textarea-wraper" id="additionalComments" placeholder="Please eneter Your review"> </textarea>
+                <div class=mymenu>
+		    <label> დამატებითი კომენტარი:</label>
+		    <p>
+                    <textarea class="textarea-wraper" id="additionalComments" placeholder="დამატებითი კომენტარი..."> </textarea>
+		    </p>
                 </div>
 
-                <div class="input-wraper">
-		    <label for="grade">საბოლოო შეფასება*:</label>
-		    <select name="grade" id="grade" required>
+                <div class="mymenu">
+		    <label>საბოლოო შეფასება*:</label>
+		    <p>
+		    <select name="grade" id="grade" class="mygrade" required>
 		      <option disabled selected value> -- აირჩიეთ შეფასება -- </option>
-		      <option value="1">1</option>
-		      <option value="2">2</option>
-		      <option value="3">3</option>
-		      <option value="4">4</option>
-		      <option value="5">5</option>
+		      <option value="1">1. ძალიან ცუდი</option>
+		      <option value="2">2. ცუდი</option>
+		      <option value="3">3. დამაკმაყოფილებელი</option>
+		      <option value="4">4. კარგი</option>
+		      <option value="5">5. ძალიან კარგი</option>
 		    </select> 
+		    </p>
                 </div>
 		    
-                <button class="button-wraper" type="submit"> გაგზავნა </button>
+                <button class="button" type="submit"> გაგზავნა </button>
             </form>
     </div>
 
